@@ -10,7 +10,7 @@ A Twitter Clone made using Django
 To set the application locally, first clone the repo
 
 ```  
-git clone https://github.com/gnarula/django-ribbit.git
+https://github.com/Shibly/Twitter-Clone.git
 ```
 
 Make a virtual environment
