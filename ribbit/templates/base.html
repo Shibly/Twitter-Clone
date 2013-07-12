@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet/less" href="{{ STATIC_URL }}style.less">
+    {% load staticfiles %}
+    <link rel="stylesheet/less" href="{{ STATIC_URL }}less/style.less">
     <link rel="stylesheet" href="{{ STATIC_URL }}css/bootstrap.min.css">
     <link rel="stylesheet" href="{{ STATIC_URL }}css/bootstrap-responsive.min.css">
     <script src="{{ STATIC_URL }}js/bootstrap.min.js"></script>
     <script src="{{ STATIC_URL }}js/jquery-2.0.3.min.js"></script>
-    <script src="{{ STATIC_URL }}less.js"></script>
+    <script src="{{ STATIC_URL }}js/less.js"></script>
 </head>
 <body>
 <header>
@@ -19,7 +20,7 @@
             <a href="/users/{{ username }}">My Profile</a>
             <a href="/ribbits">Public Ribbits</a>
             <form action="/logout">
-                <input type="submit" id="btnLogOut" value="Log Out">
+                <input type="submit" class="btn btn-primary" value="Log Out">
             </form>
         {% endblock %}
     </div>
